@@ -11,7 +11,7 @@ public class AverageGrades {
             for (int j = 0; j <= numberofComponents; j++) {
                 total += grades [i][j] * weights[j];
             }
-            averages[i] = total / 100.0;
+            averages[i] = total / 100;
 
         }
         return averages;
@@ -23,7 +23,7 @@ public class AverageGrades {
 
         int[] result = average_grades(grades, weights);
 
-        for (int i = 0;i <= results.length; i++) {
+        for (int i = 0;i < result.length; i++) {
             System.out.println(result[i]);
         }
     }
