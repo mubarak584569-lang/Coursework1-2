@@ -20,7 +20,7 @@ static void display(int number) {
     int len = numberString.length();
 
     for(int line = 1; line <= 5; line++){
-        String row = "";
+        String row = " ";
 
         for (int i = 0; i < len; i++){
              int digit = numberString.charAt(i) - '0';
