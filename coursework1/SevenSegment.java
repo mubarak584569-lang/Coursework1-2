@@ -1,5 +1,5 @@
 public class SevenSegment {
-   String ssd(int d, int n) { 
+   static String ssd(int d, int n) { 
     switch ((d*10)+n) { 
         case  1: case  5: case 21: case 23: case 25: case 31: case 33: case 35: 
         case 43: case 51: case 53: case 55: case 61: case 63: case 65: case 71: 
