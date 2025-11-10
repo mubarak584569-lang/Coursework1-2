@@ -10,20 +10,24 @@ public class IceCream {
         int chocolate = Integer.parseInt(number.substring(4,0));
         int strawberry = Integer.parseInt(number.substring(0,2));
 
-        System.out.print("Would you like (v)anilla, (c)hocolate or (s)trawberry");
+        System.out.print("Would you like (v)anilla, (c)hocolate or (s)trawberry? ");
         String flavour = scanner.nextLine().toLowerCase();
 
-        int pricePerScoop = 0;
-        if (flavour.equals("v")){
-            pricePerScoop = vanilla;
-        } else if (flavour.equals("c")){
-            pricePerScoop = chocolate;
-        } else if (flavour.equals("s")){
-            pricePerScoop = strawberry;
-        } else {
-            System.out.println("we don't have that flavour");
-            scanner.close();
-            return;
+        int pricePerScoop;
+        switch (flavour) {
+            case "v":
+                pricePerScoop = vanilla;
+                break;
+            case "c":
+                pricePerScoop = chocolate;
+                break;
+            case "s":
+                pricePerScoop = strawberry;
+                break;
+            default:
+                System.out.println("We don't have that flavour.");
+                scanner.close();
+                return;
         }
         System.out.println("(How many scoops would you like? )");
         int scoops = scanner.nextInt();
