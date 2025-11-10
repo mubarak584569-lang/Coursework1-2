@@ -8,7 +8,7 @@ public class AverageGrades {
         for (int i=0; i < numberOfStudents; i++) {
             int total = 0;
 
-            for (int j = 0; j <= numberofComponents; j++) {
+            for (int j = 0; j < numberofComponents; j++) {
                 total += grades [i][j] * weights[j];
             }
             averages[i] = total / 100;
